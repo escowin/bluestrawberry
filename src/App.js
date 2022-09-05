@@ -5,11 +5,10 @@ import Nav from './components/Nav';
 
 function App() {
   return (
-    <div>
+    <div id='body' className='flex-column'>
       <Nav/>
-      <main>
-        <About/>
-      </main>
+      <main></main>
+      <About/>
     </div>
   );
 }

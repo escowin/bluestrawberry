@@ -1,12 +1,17 @@
 import React from "react";
-import coverPhoto from "../../assets/images/edwin-escobar-20200901-bluestrawberry-001.jpg"
 
 function About() {
+    const copyrightYear = new Date().getFullYear()
+
     return (
-        <section className="flex-column">
-            <h1 id="about">About | Bluestrawberry</h1>
-            <img src={coverPhoto} style={{ width: "100%" }} alt="cover"/>
-        </section>
+        <footer className="flex-column" id="about">
+            <h2>About bluestrawberry</h2>
+            <p>iterations of the wordless narrative</p>
+            <p id="copyright">
+                &copy; {copyrightYear}
+                <a href="/"> edwin m. escobar</a>
+            </p>
+        </footer>
     )
 }
 
