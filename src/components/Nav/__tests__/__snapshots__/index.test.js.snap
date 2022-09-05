@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav compnent matches snapshot 1`] = `
+<DocumentFragment>
+  <header>
+    <h2>
+      <a
+        aria-label="title"
+        data-testid="link"
+        href="/"
+      >
+        Bluestrawberry
+      </a>
+    </h2>
+    <nav>
+      <ul
+        class="flex"
+        id="nav-links"
+      >
+        <li>
+          <a
+            data-testid="about"
+            href="#about"
+          >
+            About
+          </a>
+        </li>
+        <li>
+          <span>
+            Contact
+          </span>
+        </li>
+        <li>
+           
+          <span>
+            bluestrawberry-one
+          </span>
+        </li>
+        <li>
+           
+          <span>
+            bluestrawberry-two
+          </span>
+        </li>
+        <li>
+           
+          <span>
+            hebdomas
+          </span>
+        </li>
+        <li>
+           
+          <span>
+            days
+          </span>
+        </li>
+      </ul>
+    </nav>
+  </header>
+</DocumentFragment>
+`;

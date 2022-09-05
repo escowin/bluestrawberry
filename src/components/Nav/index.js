@@ -27,14 +27,14 @@ function Nav () {
     return (
         <header>
             <h2>
-                <a href="/">
+                <a data-testid="link" href="/" aria-label="title">
                     Bluestrawberry
                 </a>
             </h2>
             <nav>
                 <ul className="flex" id="nav-links">
                     <li>
-                        <a href="#about">About</a>
+                        <a data-testid="about" href="#about">About</a>
                     </li>
                     <li>
                         <span>Contact</span>
