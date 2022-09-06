@@ -9,8 +9,9 @@ exports[`Nav compnent matches snapshot 1`] = `
         data-testid="link"
         href="/"
       >
-        Bluestrawberry
+         Bluestrawberry
       </a>
+       
     </h2>
     <nav>
       <ul
@@ -30,28 +31,11 @@ exports[`Nav compnent matches snapshot 1`] = `
             Contact
           </span>
         </li>
-        <li>
-           
+        <li
+          class="series-link false"
+        >
           <span>
-            bluestrawberry-one
-          </span>
-        </li>
-        <li>
-           
-          <span>
-            bluestrawberry-two
-          </span>
-        </li>
-        <li>
-           
-          <span>
-            hebdomas
-          </span>
-        </li>
-        <li>
-           
-          <span>
-            days
+            Volume-one
           </span>
         </li>
       </ul>
