@@ -1,23 +1,21 @@
 import React from 'react';
+import PhotoList from '../PhotoList';
 import { capitalizeFirstLetter } from '../../utils/helpers';
-import photo from '../../assets/images/bluestrawberry-01/0.jpg';
 // hooks
 // - only call hooks from react functions
 // - only call hooks at the top level. cannot be used inside for loops, nested functions, or conditionals.
 
-function Gallery(props) {
-    const currentCategory = {
-        name: "bluestrawberry-one",
-        description: "original run",
-    };
+// passed down prop from App
+function Gallery({ currentCategory }) {
+    // destructure currentCategory's name and description
+    const { name, description } = currentCategory;
 
     return (
         <section>
-            <h1>{capitalizeFirstLetter(currentCategory.name)}</h1>
-            <p>{currentCategory.description}</p>
-            <div className='flex-wrap'>
-                <img src={photo} alt="issue 01" className='first-run'/>
-            </div>
+            <h1>{capitalizeFirstLetter(name)}</h1>
+            <p>{description}</p>
+            {/* prop drilling | passes down currentCategory.name as a prop into PhotoList from Gallery */}
+            <PhotoList category={currentCategory.name}/>
         </section>
     );
 }

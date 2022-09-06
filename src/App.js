@@ -8,8 +8,8 @@ function App() {
   // originally found in Nav. lifted state to App level. These props can now pass down child components.
   // initializing category state as an array of objects
   const [categories] = useState([
-    { name: "bluestrawberry-one", description: "original run" },
-    { name: "bluestrawberry-two", description: "second" },
+    { name: "volume-one", description: "original run" },
+    { name: "volume-two", description: "second" },
     { name: "hebdomas", description: "seven days" },
     { name: "days", description: "days gone by" },
   ]);
@@ -20,7 +20,7 @@ function App() {
     <div id='body' className='flex-column'>
       <Nav categories={categories} setCurrentCategory={setCurrentCategory} currentCategory={currentCategory}/>
       <main>
-        <Gallery/>
+        <Gallery currentCategory={currentCategory}/>
       </main>
       <About/>
     </div>
