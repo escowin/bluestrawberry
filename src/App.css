@@ -29,6 +29,14 @@ a:hover, li:hover {
   color: var(--link);
 }
 
+.series-link {
+  font-weight: bolder;
+}
+
+.navActive {
+  color: red;
+}
+
 /* flow */
 .flex-column {
   display: flex;
@@ -37,6 +45,11 @@ a:hover, li:hover {
 
 .flex {
   display: flex;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #body {
@@ -50,9 +63,16 @@ a:hover, li:hover {
 }
 
 /* box */
+
+
 #about {
   background: url('./assets/images/edwin-escobar-20200901-bluestrawberry-001.jpg');
   background-size: cover;
   padding: 1%;
   text-shadow: var(--text-shadow) var(--primary);
+}
+
+.first-run {
+  height: 80vh;
+  margin: 1%;
 }
