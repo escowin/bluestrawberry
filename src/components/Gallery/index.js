@@ -12,8 +12,8 @@ function Gallery({ currentCategory }) {
 
     return (
         <section>
-            <h1>{capitalizeFirstLetter(name)}</h1>
-            <p>{description}</p>
+            <h2>{capitalizeFirstLetter(name)}</h2>
+            <p className='description'>{description}</p>
             {/* prop drilling | passes down currentCategory.name as a prop into PhotoList from Gallery */}
             <PhotoList category={currentCategory.name}/>
         </section>

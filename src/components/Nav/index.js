@@ -14,21 +14,18 @@ function Nav(props) {
 
   return (
     <header>
-      <h2>
+      <h1>
         <a data-testid="link" href="/" aria-label="title">
           {" "}
           Bluestrawberry
         </a>{" "}
-      </h2>
+      </h1>
       <nav>
         <ul className="flex" id="nav-links">
           <li>
             <a data-testid="about" href="#about">
               About
             </a>
-          </li>
-          <li>
-            <span>Contact</span>
           </li>
 
           {/* dynamically generates remaining li */}

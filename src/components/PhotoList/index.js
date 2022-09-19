@@ -35,7 +35,7 @@ function PhotoList({ category }) {
 
   return (
     <div>
-      <div className="flex-wrap">
+      <div className="horizontal">
         {/* [currentPhotos] is mapped to render each photo that matches user-selected category */}
         {currentPhotos.map((image, i) => (
           <img
