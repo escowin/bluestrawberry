@@ -7,7 +7,7 @@
   
 ## Description
 
-  my amazing graphic novel bluestrawberry in all of its wordless glory.
+  my amazing graphic novel Bluestrawberry displayed in all of its wordless glory.
 
 ## Languages
 
@@ -15,7 +15,15 @@
 
 ## Table of Contents
 
+  * [Screenshots](#screenshots)
+
   * [Author](#author)
+
+## Screenshots
+
+  ![desktop](./src/assets/images/screenshot/bluestrawberry-desktop.jpg)
+
+  ![mobile](./src/assets//images//screenshot/bluestrawberry-mobile.jpg)
 
 ## Author
 
