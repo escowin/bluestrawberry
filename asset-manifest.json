@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/bluestrawberry/static/css/main.4712b7c6.css",
+    "main.js": "/bluestrawberry/static/js/main.4703adb3.js",
+    "static/js/787.5179ceba.chunk.js": "/bluestrawberry/static/js/787.5179ceba.chunk.js",
+    "static/media/4.jpg": "/bluestrawberry/static/media/4.7c73e618736b0072c459.jpg",
+    "static/media/5.jpg": "/bluestrawberry/static/media/5.ea8fb4d4ded0e203143b.jpg",
+    "static/media/3.jpg": "/bluestrawberry/static/media/3.5c08ec624b01c0cd2742.jpg",
+    "static/media/6.jpg": "/bluestrawberry/static/media/6.e0406b5a4321db90561e.jpg",
+    "static/media/1.jpg": "/bluestrawberry/static/media/1.480cde958308f2cb8408.jpg",
+    "static/media/0.jpg": "/bluestrawberry/static/media/0.fc3e05ee706a4b86e9c5.jpg",
+    "static/media/2.jpg": "/bluestrawberry/static/media/2.6abb2fcdd9a25166ada8.jpg",
+    "static/media/7.jpg": "/bluestrawberry/static/media/7.3c3e9a88c8c24280552d.jpg",
+    "index.html": "/bluestrawberry/index.html",
+    "main.4712b7c6.css.map": "/bluestrawberry/static/css/main.4712b7c6.css.map",
+    "main.4703adb3.js.map": "/bluestrawberry/static/js/main.4703adb3.js.map",
+    "787.5179ceba.chunk.js.map": "/bluestrawberry/static/js/787.5179ceba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4712b7c6.css",
+    "static/js/main.4703adb3.js"
+  ]
+}
