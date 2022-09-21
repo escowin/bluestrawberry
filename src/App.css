@@ -1,8 +1,8 @@
 :root {
   --primary: rgba(8, 7, 23, 0.85);
-  --text: rgba(196, 214, 221, 0.9);
-  --link: rgba(14, 84, 107, 0.898);
-  --subheader: rgba(54, 134, 161, 0.898);
+  --light: rgba(196, 214, 221, 0.9);
+  --link: rgba(14, 84, 107, 0.9);
+  --subheader: rgba(54, 134, 161, 0.9);
   --active: rgb(166, 16, 16);
   --box-shadow: 0 0 .5rem;
   --text-shadow: 0 0 .25rem;
@@ -15,7 +15,7 @@
 
 body {
   background-color: var(--primary);
-  color: var(--text);
+  color: var(--light);
   font-variant: small-caps;
   font-family: 'Raleway', sans-serif;
   height: 100vh;
@@ -38,6 +38,9 @@ h2 {
   letter-spacing: .25rem;
 }
 
+#about h2 {
+  color: var(--subheader);
+}
 .description {
   padding-left: .5rem;
 }
@@ -62,6 +65,8 @@ a:hover, li:hover {
   text-shadow: var(--text-shadow) var(--active);
 }
 
+
+
 /* flow */
 .flex-column {
   display: flex;
@@ -84,7 +89,8 @@ a:hover, li:hover {
 
 #nav-links {
   list-style: none;
-  justify-content: space-around;
+  justify-content: space-between;
+  /* text-align: left; */
 }
 
 .horizontal {
@@ -92,23 +98,25 @@ a:hover, li:hover {
   white-space: nowrap;
   display: flex;
   align-items: baseline;
-  padding: 1%;
 }
 
 /* horizontal scrollbar */
 ::-webkit-scrollbar {
+  background: linear-gradient(0.25turn, var(--primary), var(--subheader), var(--primary));
   display: block;
   height: .5rem;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary);
-  transition: 1s;
-  border-radius: 1rem;
+  background: var(--link);
+  border-radius: .25rem;
+  box-shadow: var(--box-shadow) var(--link);
+  transition: 2s;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--link);
+  background: var(--subheader);
+  box-shadow: var(--box-shadow) var(--subheader);
 }
 
 /* box */
@@ -117,25 +125,43 @@ h1 {
   max-width: fit-content;
   border-radius: 0 1rem 0 0;
   padding: .15rem;
+  box-shadow: .5rem 0 .5rem var(--primary);
 }
 
 nav {
   background-color: var(--primary);
+  padding: .25rem .5rem;
+  box-shadow: 0 -.5rem .5rem var(--primary);
 }
 
-.first-run {
+main {
+  height: 100%;
+}
+
+.gallery {
+  background-color: var(--primary);
+  height: 100%;
+}
+
+.series-wrapper {
+  margin: 0 0 1vh 0;
+  padding: .5%;
+  background-color: var(--primary);
+
+}
+
+.run {
   max-height: 65vh;
-  margin: .75%;
+  margin: .5rem;
   box-shadow: var(--box-shadow) var(--primary);
 }
 
 footer {
-  background: url('./assets/images/edwin-escobar-20200901-bluestrawberry-001.jpg');
+  background: url('./assets/images/volume-two/1.jpg');
   background-size: cover;
-  text-shadow: var(--text-shadow) var(--primary);
 }
 
 #about {
   padding: 1%;
-  background-color: rgba(8, 7, 23, 0.35);
+  background-color: rgba(8, 7, 23, 0.7);
 }

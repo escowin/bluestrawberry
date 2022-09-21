@@ -9,10 +9,16 @@ function App() {
   // initializing category state as an array of objects
   const [categories] = useState([
     { name: "volume-one", description: "original run" },
-    { name: "volume-two", description: "second" },
+    { name: "volume-two", description: "second go around" },
     { name: "hebdomas", description: "seven days" },
-    { name: "hebdomas-ii", description: "seven days"},
-    { name: "days", description: "days gone by" },
+    { name: "hebdomas-ii", description: "seven more days"},
+    { name: "days-01", description: "days gone by" },
+    { name: "days-02", description: "days gone by" },
+    { name: "days-03", description: "days gone by" },
+    { name: "days-04", description: "days gone by" },
+    { name: "days-05", description: "days gone by" },
+    { name: "days-06", description: "days gone by" },
+    { name: "days-07", description: "days gone by" },
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);

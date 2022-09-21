@@ -38,18 +38,47 @@ function PhotoList({ category }) {
       { name: 'thursday', category: 'hebdomas-ii', description: "dfgfg"},
       { name: 'friday', category: 'hebdomas-ii', description: "dfgfg"},
 
-      { name: '0001-a', category: 'days', description: "days 0001"},
-      { name: '0001-b', category: 'days', description: "days 0001"},
-      { name: '0001-c', category: 'days', description: "days 0001"},
-      { name: '0001-d', category: 'days', description: "days 0001"},
-      { name: '0001-e', category: 'days', description: "days 0001"},
-      { name: '0002-a', category: 'days', description: "days 0002"},
-      { name: '0002-b', category: 'days', description: "days 0002"},
-      { name: '0002-c', category: 'days', description: "days 0002"},
-      { name: '0002-d', category: 'days', description: "days 0002"},
-      { name: '0002-e', category: 'days', description: "days 0002"},
+      { name: '0001', category: 'days-01', description: "01"},
+      { name: '0002', category: 'days-01', description: "01"},
+      { name: '0003', category: 'days-01', description: "01"},
+      { name: '0004', category: 'days-01', description: "01"},
+      { name: '0005', category: 'days-01', description: "01"},
 
+      { name: '0006', category: 'days-02', description: "02"},
+      { name: '0007', category: 'days-02', description: "02"},
+      { name: '0008', category: 'days-02', description: "02"},
+      { name: '0009', category: 'days-02', description: "02"},
+      { name: '0010', category: 'days-02', description: "02"},
 
+      { name: '0011', category: 'days-03', description: "03"},
+      { name: '0012', category: 'days-03', description: "03"},
+      { name: '0013', category: 'days-03', description: "03"},
+      { name: '0014', category: 'days-03', description: "03"},
+      { name: '0015', category: 'days-03', description: "03"},
+
+      { name: '0016', category: 'days-04', description: "04"},
+      { name: '0017', category: 'days-04', description: "04"},
+      { name: '0018', category: 'days-04', description: "04"},
+      { name: '0019', category: 'days-04', description: "04"},
+      { name: '0020', category: 'days-04', description: "04"},
+
+      { name: '0021', category: 'days-05', description: "05"},
+      { name: '0022', category: 'days-05', description: "05"},
+      { name: '0023', category: 'days-05', description: "05"},
+      { name: '0024', category: 'days-05', description: "05"},
+      { name: '0025', category: 'days-05', description: "05"},
+
+      { name: '0026', category: 'days-06', description: "06"},
+      { name: '0027', category: 'days-06', description: "06"},
+      { name: '0028', category: 'days-06', description: "06"},
+      { name: '0029', category: 'days-06', description: "06"},
+      { name: '0030', category: 'days-06', description: "06"},
+
+      { name: '0031', category: 'days-07', description: "07"},
+      { name: '0032', category: 'days-07', description: "07"},
+      { name: '0033', category: 'days-07', description: "07"},
+      { name: '0034', category: 'days-07', description: "07"},
+      { name: '0035', category: 'days-07', description: "07"},
   ]);
 
   // only photos in the selected category appear
@@ -57,14 +86,14 @@ function PhotoList({ category }) {
   const currentPhotos = photos.filter((photo) => photo.category === category);
 
   return (
-    <div>
-      <div className="horizontal">
+    <div className="horizontal">
+      <div className="series-wrapper">
         {/* [currentPhotos] is mapped to render each photo that matches the currently selected category */}
         {currentPhotos.map((image, i) => (
           <img
             src={require(`../../assets/images/${category}/${i}.jpg`)} // incremental via i
             alt={image.name} // accessibility
-            className="first-run"
+            className="run"
             key={image.name} // must be a unique string
           />
         ))}

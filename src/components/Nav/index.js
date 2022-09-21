@@ -23,7 +23,7 @@ function Nav(props) {
         </a>{" "}
       </h1>
       <nav>
-        <ul className="flex" id="nav-links">
+        <ul className="flex-wrap" id="nav-links">
           {/* dynamically generates remaining li */}
           {categories.map((category) => (
             <li

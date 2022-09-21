@@ -11,7 +11,7 @@ function Gallery({ currentCategory }) {
     const { name, description } = currentCategory;
 
     return (
-        <section>
+        <section className='gallery'>
             <h2>{capitalizeFirstLetter(name)}</h2>
             <p className='description'>{description}</p>
             {/* prop drilling | passes down currentCategory.name as a prop into PhotoList from Gallery */}
