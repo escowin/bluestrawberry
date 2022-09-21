@@ -11,14 +11,24 @@ function App() {
     { name: "volume-one", description: "original run" },
     { name: "volume-two", description: "second" },
     { name: "hebdomas", description: "seven days" },
+    { name: "hebdomas-ii", description: "seven days"},
     { name: "days", description: "days gone by" },
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  
+  // separate out days from above categories. days has sub sections. days will be passed down to Nav & Gallery
+  // const [days] = useState([
+  // ]);
+  // const [currentDay, setCurrentDay] = useState(days[0]);
 
   return (
     <div id='body' className='flex-column'>
-      <Nav categories={categories} setCurrentCategory={setCurrentCategory} currentCategory={currentCategory}/>
+      <Nav
+       categories={categories} 
+       setCurrentCategory={setCurrentCategory} 
+       currentCategory={currentCategory}
+      />
       <main>
         <Gallery currentCategory={currentCategory}/>
       </main>

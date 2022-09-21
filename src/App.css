@@ -18,6 +18,7 @@ body {
   color: var(--text);
   font-variant: small-caps;
   font-family: 'Raleway', sans-serif;
+  height: 100vh;
 }
 
 /* typography */
@@ -111,16 +112,30 @@ a:hover, li:hover {
 }
 
 /* box */
+h1 {
+  background-color: var(--primary);
+  max-width: fit-content;
+  border-radius: 0 1rem 0 0;
+  padding: .15rem;
+}
 
-#about {
-  background: url('./assets/images/edwin-escobar-20200901-bluestrawberry-001.jpg');
-  background-size: cover;
-  padding: 1%;
-  text-shadow: var(--text-shadow) var(--primary);
+nav {
+  background-color: var(--primary);
 }
 
 .first-run {
   max-height: 65vh;
   margin: .75%;
   box-shadow: var(--box-shadow) var(--primary);
+}
+
+footer {
+  background: url('./assets/images/edwin-escobar-20200901-bluestrawberry-001.jpg');
+  background-size: cover;
+  text-shadow: var(--text-shadow) var(--primary);
+}
+
+#about {
+  padding: 1%;
+  background-color: rgba(8, 7, 23, 0.35);
 }

@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
+// look into passing down multiple props into Nav
 function Nav(props) {
   // defining the passed down props from parent App component
   const { categories = [], setCurrentCategory, currentCategory } = props;
+  console.log(categories)
 
   // hook | first argument = callback function; second argument directs hook to re-render component on changes to this state's value.
   useEffect(() => {
@@ -22,12 +24,6 @@ function Nav(props) {
       </h1>
       <nav>
         <ul className="flex" id="nav-links">
-          <li>
-            <a data-testid="about" href="#about">
-              About
-            </a>
-          </li>
-
           {/* dynamically generates remaining li */}
           {categories.map((category) => (
             <li
