@@ -86,7 +86,7 @@ function PhotoList({ category }) {
   const currentPhotos = photos.filter((photo) => photo.category === category);
 
   return (
-    <div className="horizontal">
+    <article className="horizontal" id="scrollbar">
       <div className="series-wrapper">
         {/* [currentPhotos] is mapped to render each photo that matches the currently selected category */}
         {currentPhotos.map((image, i) => (
@@ -98,7 +98,7 @@ function PhotoList({ category }) {
           />
         ))}
       </div>
-    </div>
+    </article>
   );
 }
 

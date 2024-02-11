@@ -29,13 +29,13 @@ function App() {
   // const [currentDay, setCurrentDay] = useState(days[0]);
 
   return (
-    <div id='body' className='flex-column'>
+    <div id='body'>
       <Nav
        categories={categories} 
        setCurrentCategory={setCurrentCategory} 
        currentCategory={currentCategory}
       />
-      <main>
+      <main id={currentCategory.name}>
         <Gallery currentCategory={currentCategory}/>
       </main>
       <About/>

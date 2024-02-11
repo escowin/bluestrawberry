@@ -5,14 +5,12 @@ function About() {
 
     return (
         <footer className="flex-column">
-            <div id="about">
-                <h2>About bluestrawberry</h2>
-                <p>iterations of wordless narrative</p>
+                <h2 className="header">About bluestrawberry</h2>
+                <p>wordless iteration</p>
                 <p id="copyright">
                     &copy; {copyrightYear}
                     <a href="/"> edwin m. escobar</a>
                 </p>
-            </div>
         </footer>
     )
 }

@@ -16,14 +16,14 @@ function Nav(props) {
 
   return (
     <header>
-      <h1>
+      <h1 className="header">
         <a data-testid="link" href="/" aria-label="title">
           {" "}
           Bluestrawberry
         </a>{" "}
       </h1>
       <nav>
-        <ul className="flex-wrap" id="nav-links">
+        <ul id="nav-links">
           {/* dynamically generates remaining li */}
           {categories.map((category) => (
             <li
